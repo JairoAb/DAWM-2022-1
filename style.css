@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.fondo-header-nav{
+    height: 80vh;
+    background-image: url("https://cdn.pixabay.com/photo/2022/05/01/15/02/art-7167741_960_720.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+}
+
+.nav-bar{
+    width: 70%;
+    height: 6vh;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+}
+
+.nav-bar-list{
+    list-style: none;
+    
+}
+
+.nav-bar-list li{
+    display: inline;
+    list-style: none;
+}
+
+.nav-bar-list li a{
+    color: #ac6363;
+    text-decoration: none;
+    padding: 0px 35px;
+}
+
+h1{
+    /* position: absolute;
+    top: 30%; */
+    color: white;
+    font-size: 80px;
+}
+
+.computer-scientist{
+    font-weight: 400;
+    color: #ac6363;
+    position: absolute;
+    padding: 10px;
+    right: 42vw;
+    top: 76vh;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 1px 1px 10px black;
+}
