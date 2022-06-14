@@ -1,0 +1,12 @@
+.video-espol-container{
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+
+.video-espol{
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  border-radius: 1rem;
+}
