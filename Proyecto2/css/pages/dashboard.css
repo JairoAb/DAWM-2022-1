@@ -33,7 +33,7 @@ File: scss
   stroke-width: 3px;
   stroke: #398bf7; }
 
-#sales-overview2 .ct-label{
+.ct-label{
   color: black;
   font-weight: 500;
 }
