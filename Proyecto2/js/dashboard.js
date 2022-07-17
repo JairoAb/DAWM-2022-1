@@ -54,7 +54,7 @@ const cargandoBarras = (hours = [], temperature = []) => {
     },
     {
       low: 0
-      , high: 25
+      , high: 40
       , showArea: true
       , divisor: 5
       , lineSmooth: false
@@ -88,7 +88,7 @@ const cargandoBarras = (hours = [], temperature = []) => {
 const cargandoMaxMin = (max = [], min = []) => {
   const actualWeek = weekDays.slice(day - 1)
   console.log(actualWeek)
-  const restWeek = actualWeek.length < 7 ? weekDays.slice(0, actualWeek.length-1) : undefined
+  const restWeek = actualWeek.length < 7 ? weekDays.slice(0, weekDays.length - actualWeek.length) : undefined
   console.log(restWeek)
   const week = restWeek ? [...actualWeek, ...restWeek] : [...actualWeek]
 
@@ -105,7 +105,7 @@ const cargandoMaxMin = (max = [], min = []) => {
     },
     {
       low: 0
-      , high: 25
+      , high: 40
       , showArea: true
       , divisor: 5
       , lineSmooth: false
