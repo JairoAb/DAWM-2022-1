@@ -1,0 +1,33 @@
+.login__header {
+  background-color: rgb(255, 94, 99);
+  height: 45vh;
+  text-align: center;
+  border-radius: 0 0 1.5rem 1.5rem;
+
+  .header__logo {
+    width: fit-content;
+
+    img {
+      height: 30vh;
+    }
+  }
+}
+
+form {
+  width: 80%;
+  padding-top: 2rem;
+  button {
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    background: rgb(255, 94, 99);
+  }
+}
+
+.login__options {
+  padding-top: 2rem;
+  a {
+    text-decoration: none;
+    color: red;
+  }
+}

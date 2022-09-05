@@ -1,0 +1,34 @@
+<body class="">
+  <header class="container-fluid login__header text-center d-flex flex-column align-items-center">
+    <a routerLink="/login" class="text-end align-self-end pb-2">Cerrar Sesion</a>
+    <img class="img-fluid rounded-4" src="https://sp-images.summitpost.org/947006.jpg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=876696700800816d01e0d1eb31ce7ab0" alt="perfil" srcset="">
+    <h1 class="pt-3">
+      Jairo Alcivar
+    </h1>
+  </header>
+  <hr>
+  <main>
+    <div class="container">
+      <mat-card class="m-1 p-2 rounded-4">
+        <div class="card__header d-flex justify-content-between align-items-center">
+          <mat-icon>assignment</mat-icon>
+          <h1 class="my-auto">Citas planificadas</h1>
+            <mat-icon routerLink="/citas">arrow_forward_ios</mat-icon>
+        </div>
+      </mat-card>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <nav class="d-flex justify-content-around align-items-center">
+      <a routerLink="/medicos">
+        <mat-icon class="icon">medical_information</mat-icon>
+      </a>
+      <a routerLink="/home">
+        <mat-icon class="icon">home</mat-icon>
+      </a>
+      <a routerLink="/perfil">
+        <mat-icon class="current_icon">person</mat-icon>
+      </a>
+    </nav>
+  </footer>
+</body>

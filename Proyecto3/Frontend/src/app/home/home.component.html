@@ -1,0 +1,57 @@
+<body class="d-flex flex-column justify-content-between">
+  <header class="container-fluid login__header text-center">
+    <h1 class="pt-3">
+      MedicAll
+    </h1>
+    <p>
+      Separa una cita con nuestros médicos <br> y ten una de las mejores <br> atenciones médicas
+    </p>
+  </header>
+  <main>
+    <h2 class="m-2 fw-normal">
+      Categorias mas buscadas
+    </h2>
+    <div class="categorias d-flex justify-content-around">
+      <div class="d-flex flex-column align-items-center" *ngFor="let categoria of titulos">
+        <img class="p-1 bg-light rounded-3 img-fluid" src="../../assets/imagenes/medicalicon.png" alt="medical icon">
+        <h3>{{categoria['nombre_titulo']}}</h3>
+      </div>
+    </div>
+    <h2 class="m-2 fw-normal">
+      Mejores Médicos
+    </h2>
+    <div *ngFor="let medico of medicos">
+      <div class="container">
+        <mat-card routerLink="/medico" class="m-1 rounded-4">
+          <div class="card__header d-flex justify-content-between">
+            <img class="rounded-circle" src="http://www.venmond.com/demo/vendroid/img/avatar/big.jpg">
+            <h4>{{medico['correo']}}</h4>
+          </div>
+          <p>Cardiologo</p>
+          <mat-card-footer>
+            <div class="stars d-flex justify-content-end px-1 pb-1">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star_border</mat-icon>
+              <mat-icon>star_border</mat-icon>
+            </div>
+          </mat-card-footer>
+        </mat-card>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <nav class="d-flex justify-content-around align-items-center">
+      <a routerLink="/medicos">
+        <mat-icon class="icon">medical_information</mat-icon>
+      </a>
+      <a routerLink="/home">
+        <mat-icon class="current_icon">home</mat-icon>
+      </a>
+      <a routerLink="/perfil">
+        <mat-icon class="icon">person</mat-icon>
+      </a>
+    </nav>
+  </footer>
+</body>

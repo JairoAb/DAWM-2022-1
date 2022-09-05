@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Medicall Express</title>
+</head>
+
+<body>
+  <div class="col-lg-15 mx-auto py-md-3">
+    <header>
+        <h1 class="text-center display-3 py-1">MVC API</h1>
+    </header>
+    <main>
+      <h2 class="display-5 my-3">Relacional</h2>
+      <h4 class="display-5 my-3">Métodos GET</h4>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <h5 class="card-header">/titulos</h5>
+            <div class="card-body">
+              <p class="card-text">Retorna todos los titulos de los medicos disponibles en el sistema.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <h5 class="card-header">/titulos/:id</h5>
+            <div class="card-body">
+              <p class="card-text">Retorna el titulo con el id espcificado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <h5 class="card-header">/medicos/count/:count</h5>
+            <div class="card-body">
+              <p class="card-text">Retorna la cantidad de medicos especificados en count</p>
+              <p class="card-text">count - Cantidad de medicos requeridos</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <h5 class="card-header">/medicos/:titulo</h5>
+            <div class="card-body">
+              <p class="card-text">Retorna la cantidad de medicos especificados en count</p>
+              <p class="card-text">count - Cantidad de medicos requeridos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="display-5 my-3">No Relacional</h2>
+      <h4 class="display-5 my-3">Métodos GET</h4>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <h5 class="card-header">https://proyecto3-dawm-default-rtdb.firebaseio.com/citas</h5>
+            <div class="card-body">
+              <p class="card-text">Retorna todas las citas del usuario.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

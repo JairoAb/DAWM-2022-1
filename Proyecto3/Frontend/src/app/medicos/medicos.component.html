@@ -1,0 +1,50 @@
+<body>
+  <form class="d-flex flex-column p-2 form">
+    <mat-form-field appearance="fill">
+      <mat-label>Categoria</mat-label>
+      <input matInput class="hola">
+      <mat-icon matSuffix (click)="buscarMedicos()">
+        search
+      </mat-icon>
+    </mat-form-field>
+  </form>
+
+  <h1 class="text-center">Conoce a todos nuestros médicos</h1>
+
+  <div class="medicos d-flex flex-column">
+    <div *ngFor="let medico of medicos">
+      <div class="container">
+        <mat-card routerLink="/medico" class="m-1 rounded-4">
+          <div class="card__header d-flex justify-content-between">
+            <img class="rounded-circle" src="http://www.venmond.com/demo/vendroid/img/avatar/big.jpg">
+            <h4>{{medico['correo']}}</h4>
+          </div>
+          <p>{{medico['titulo']}}</p>
+          <mat-card-footer>
+            <div class="stars d-flex justify-content-end px-1 pb-1">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star_border</mat-icon>
+              <mat-icon>star_border</mat-icon>
+            </div>
+          </mat-card-footer>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid">
+    <nav class="d-flex justify-content-around align-items-center">
+      <a routerLink="/medicos">
+        <mat-icon class="current_icon">medical_information</mat-icon>
+      </a>
+      <a routerLink="/home">
+        <mat-icon class="icon">home</mat-icon>
+      </a>
+      <a routerLink="/perfil">
+        <mat-icon class="icon">person</mat-icon>
+      </a>
+    </nav>
+  </footer>
+</body>

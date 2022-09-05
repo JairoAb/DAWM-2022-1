@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "dawm",
+    "password": "123",
+    "database": "dawm_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "dawm",
+    "password": "123",
+    "database": "dawm_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "dawm",
+    "password": "123",
+    "database": "dawm_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

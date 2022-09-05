@@ -1,0 +1,27 @@
+<div class="container-fluid login__header d-flex">
+  <div class="header__logo bg-light m-auto rounded-circle">
+    <img class="img-fluid" src="../../assets/imagenes/logo.png" alt="">
+  </div>
+</div>
+
+<form class="d-flex flex-column mt-5 form mx-auto">
+  <mat-form-field class="" >
+    <mat-label>Correo</mat-label>
+    <input matInput placeholder="Ex. user@gmail.com">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hide ? 'text' : 'password'" name="password">
+        <mat-icon matSuffix (click)="hidePassword()">
+            {{hide?'visibility_off':'visibility'}}
+        </mat-icon>
+    </mat-form-field>
+
+  <button mat-raised-button routerLink="/home">Ingresar</button>
+</form>
+
+<div class="login__options d-flex flex-column align-items-center mt-3">
+  <a routerLink="login">Olvidé mi contraseña</a>
+  <a routerLink="login">Registrarme</a>
+</div>

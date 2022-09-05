@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(128deg, rgb(250, 192, 162) 0%, rgb(255, 94, 99) 99%);
+
+  header{
+    padding-top: 10px;
+    img{
+      width: 50%;
+      border-radius: 10%;
+    }
+    a{
+      text-decoration: none;
+      color: red;
+    }
+    p{
+      margin: 0;
+    }
+  }
+
+  hr{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  main{
+    h1{
+      font-size: 1.3rem;
+      margin-left: -40px;
+    }
+    button{
+      width: 90%;
+      margin: auto;
+      font-size: 1.2rem;
+    } 
+  }
+}

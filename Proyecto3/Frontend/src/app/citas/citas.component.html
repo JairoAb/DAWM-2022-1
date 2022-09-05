@@ -1,0 +1,20 @@
+<body>
+  <mat-icon routerLink="/perfil" class="m-2">arrow_back</mat-icon>
+
+  <h1 class="text-center">Revisa todas tus reservas</h1>
+
+  <div class="citas d-flex flex-column" *ngFor="let cita of citas">
+    <div class="container">
+      <mat-card class="m-1 p-2 rounded-4">
+        <div class="card__header d-flex ">
+          <mat-icon>assignment</mat-icon>
+          <h1 class="my-auto">Dr. {{cita['id_medico']}}</h1>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p>{{cita['fecha']}}</p>
+        </div>
+        <p>Link: {{cita['link']}}</p>
+      </mat-card>
+    </div>
+  </div>
+</body>
